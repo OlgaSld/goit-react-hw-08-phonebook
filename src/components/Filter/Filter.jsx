@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { InputFilter, LabelFilter } from './Filter_styled';
-import { getFilterContacts } from 'redux/FilterSlice';
+import { getFilterContacts } from 'redux/contacts/FilterSlice';
 
 export const Filter = ({ value }) => {
   const dispatch = useDispatch();
