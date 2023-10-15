@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    padding: 12px;
-    border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 12px;
+  border-radius: 4px;
 `;
 
 export const ContactItem = styled.li`
@@ -14,7 +14,7 @@ export const ContactItem = styled.li`
   padding: 10px;
   margin-bottom: 5px;
   font-size: 24px;
-  color: #000;
+  color: gray;
 `;
 
 export const ButtonDel = styled.button`
@@ -26,8 +26,11 @@ export const ButtonDel = styled.button`
   padding-bottom: 5px;
   border-radius: 4px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     cursor: pointer;
     transform: scale(1.1);
+    background-color: violet;
+    color: gray;
   }
 `;

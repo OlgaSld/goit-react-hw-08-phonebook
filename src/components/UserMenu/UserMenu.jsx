@@ -1,6 +1,6 @@
 import { useAuth } from 'hooks';
 import { useDispatch } from 'react-redux';
-import { Username, Wrapper } from './UserMenu_styled';
+import { Button, Username, Wrapper } from './UserMenu_styled';
 import { logOut } from 'redux/auth/operations';
 
 export const UserMenu = () => {
@@ -10,9 +10,9 @@ export const UserMenu = () => {
   return (
     <Wrapper>
       <Username>Welcome, {user.name}</Username>
-      <button type="button" onClick={() => dispatch(logOut())}>
+      <Button type="button" onClick={() => dispatch(logOut())}>
         Logout
-      </button>
+      </Button>
     </Wrapper>
   );
 };

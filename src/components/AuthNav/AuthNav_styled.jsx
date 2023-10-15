@@ -2,15 +2,15 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Link = styled(NavLink)`
-  .link {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px;
-    font-weight: 700;
-    color: #2a363b;
-  }
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: gray;
+  font-size: 30px;
+  margin-right: 30px;
 
-  .link.active {
-    color: #e84a5f;
+  &.active {
+    color: violet;
   }
 `;

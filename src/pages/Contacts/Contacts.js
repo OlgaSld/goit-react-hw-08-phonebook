@@ -6,7 +6,7 @@ import { Subtitle, Title } from './Contacts_styled';
 import { ContactForm } from 'components/ContactsForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
 import { ContactsList } from 'components/ContactList/ContactList';
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -19,9 +19,9 @@ const Contacts = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Your contacts</title>
-      </Helmet>
+      </Helmet> */}
       <Title>Phonebook</Title>
       <ContactForm />
       <Subtitle>Contacts</Subtitle>
