@@ -21,10 +21,11 @@ export const Input = styled.input`
   border: 2px solid gray;
   border-radius: 5px;
   outline: none;
+  font-size: 20px;
 
   &:hover,
   &:focus {
-    color: violet;
+    border-color: violet;
   }
 `;
 

@@ -21,10 +21,11 @@ export const ButtonDel = styled.button`
   display: block;
   width: 100px;
   margin-left: auto;
-  margin-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 4px;
+  background-color: white;
+  border: 2px solid violet;
 
   &:hover,
   &:focus {

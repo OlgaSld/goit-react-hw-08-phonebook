@@ -21,9 +21,15 @@ export const Label = styled.label`
 
 export const StyledField = styled(Field)`
   padding: 10px 10px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   border-radius: 4px;
   font-size: 16px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: violet;
+  }
 `;
 
 export const ErrorMsg = styled(ErrorMessage)`
