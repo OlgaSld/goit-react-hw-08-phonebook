@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { Button, Form, Input, Label } from './RegisterForm_styled';
 import { register } from 'redux/auth/operations';
+import toast from 'react-hot-toast';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,14 @@ export const RegisterForm = () => {
         email: form.elements.email.value,
         password: form.elements.password.value,
       })
-    );
+    )
+      .unwrap()
+      .then(() => {
+        toast.success('Your register is successfully!');
+      })
+      .catch(() => {
+        toast.error('Your email or password is too short!');
+      });
     form.reset();
   };
 
